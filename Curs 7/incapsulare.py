@@ -10,7 +10,7 @@ Atunci cand avem un atribut ascuns putem folosi metode speciale pentru a interac
 Numite getter, setter si delter
 getter -> pe a-l vedea/ a avea acces la atribut
 setter -> pentru a-i schimba valoarea
-delter -> pentru a sterge valoarea
+deleter -> pentru a sterge valoarea
 
 Conventie: aceste metode trebuie denumite cu set,delete si get_ + numele variabilei
 """
@@ -20,7 +20,7 @@ class Car:
     variabila_privata = "privat"
     _variabila_protected = "protected"
 
-    def init(self,var_protected):
+    def __init__(self,var_protected):
         self._variabila_protected = var_protected
     #getter
     def get_variabila_privata(self):
@@ -52,7 +52,7 @@ print(masina.get_variabila_privata())
 
 class CarPy:
 
-    def init(self,color):
+    def __init__(self,color):
         self.color = color
         self.nr_roti = 0
     @property
@@ -69,7 +69,7 @@ class CarPy:
         return self.color
 
     @color.setter
-    def color(self,color):
+    def color(self, color):
         print(f"setter: Setam culoarea in {color}")
         self.color = color
 

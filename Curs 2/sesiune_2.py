@@ -14,18 +14,18 @@ if username == expected_user_name:
 else:
     print('username incorect!')
     username = input('introduceti username: ')
-    assert username == expected_user_name    # username gresit a doua oara
+    assert username == expected_user_name,      'username gresit a doua oara'
 password = 'password'
 if len(password) != len(expected_password):
     print('parola gresita!')
     password = input('introduceti parola: ')
-    assert password == expected_password,      # parola gresita a doua oara
+    assert password == expected_password,       'parola gresita a doua oara'
 elif password == expected_password:
     print('parola corecta')
 else:
     print('parola gresita!')
     password = input('introduceti parola: ')
-    assert password == expected_password,  # parola gresita a doua oara
+    assert password == expected_password,          'parola gresita a doua oara'
 suma_extrasa = int(input('introduceti suma: '))
 if suma_extrasa <= sold:
     print('tranzactie reusita')
@@ -34,7 +34,7 @@ else:
     reincerare = input('doresti sa incerci din nou?')
     if reincerare == 'da':
         suma_extrasa = int(input('introduceti suma: '))
-        assert suma_extrasa <= sold,        # suma dorita e prea mare
+        assert suma_extrasa <= sold,         'suma dorita e prea mare'
         print('tranzactie acceptata!')
     elif reincerare == 'nu':
         print('multumesc, o zi buna!')

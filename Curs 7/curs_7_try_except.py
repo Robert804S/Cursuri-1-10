@@ -1,10 +1,10 @@
 """
 Exceptie = clase speciale din Python folosite atunci cand ceva nu merge bine in cod
-Folosim try-except pentru a gestiona posibilele exceptii(erori) aruncate in codul nostru,
+Folosim try-except pentru a gestiona posibilele exceptii (erori) aruncate in codul nostru,
 astfel incat programul sa NU se opreasca
 """
 
-lista_numere = [1,2,3,4,5]
+lista_numere = [1, 2, 3, 4, 5]
 # print(lista_numere[10]) # va sari o eroare pentru ca in lista nu exista indexul 10
 # print("Am trecut de exceptie")  # Nu se executa acest cod
 try:
@@ -17,7 +17,7 @@ print("Am trecut de exceptie")
 try:
     print(lista_numere[10])
 except IndexError as error:
-    print("Index Error: ",error)
+    print("Index Error: ", error)
 
 # try:
 #     print(lista_numere[10])

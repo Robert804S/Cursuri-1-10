@@ -52,7 +52,20 @@ Returnează un DICT care ne spune de câte ori apare fiecare cifră
 }
 '''
 
+def functie_dict():
+    dictionar = {}
+    lista = [1, 3, 1, 5, 9, 7, 7, 5, 5]
+    for i in range(0, 10):
+        contor = 0
+        for j in range(0, len(lista)):
+            if i == lista[j]:
+                contor += 1
+                dictionar.update({i: contor})
 
+            else:
+                dictionar.update({i: contor})
+
+    return dictionar
 
 '''
 4. Funcție care primește 3 numere. Returnează valoarea maximă dintre ele
