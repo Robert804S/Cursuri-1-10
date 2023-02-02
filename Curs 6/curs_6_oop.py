@@ -8,10 +8,8 @@ class nume_clasa():
 class PrimaClasa():
     pass
 
+# obiect = instanta a unei clase
 
-'''
-obiect = instanta a unei clase
-'''
 
 obiectPrimaClasa = PrimaClasa()
 print(type(obiectPrimaClasa))
