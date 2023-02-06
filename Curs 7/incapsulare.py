@@ -1,5 +1,5 @@
 """
-Incapsulare = posbilitatea de a PROTEJA atrbutele/metodele unei clase, folosind meodificatorii de vizibilitate
+Incapsulare = posbilitatea de a PROTEJA atrbutele/metodele unei clase, folosind modificatori de vizibilitate
 
 - private (privat, adica atributul/metoda poate fi accesata doar din interiorul clasei in care a fost definit)
           -- se defineste cu underscore in fata (variabila sau metoda(): )
@@ -8,7 +8,7 @@ Incapsulare = posbilitatea de a PROTEJA atrbutele/metodele unei clase, folosind 
 
 Atunci cand avem un atribut ascuns putem folosi metode speciale pentru a interactiona cu el:
 Numite getter, setter si delter
-getter -> pe a-l vedea/ a avea acces la atribut
+getter -> pe a-l vedea / a avea acces la atribut
 setter -> pentru a-i schimba valoarea
 deleter -> pentru a sterge valoarea
 
@@ -52,7 +52,7 @@ print(masina.get_variabila_privata())
 
 class CarPy:
 
-    def __init__(self,color):
+    def __init__(self, color):
         self.color = color
         self.nr_roti = 0
     @property
@@ -75,7 +75,7 @@ class CarPy:
 
     @color.deleter
     def color(self):
-        self.color =None
+        self.color = None
 
 
 car_py = CarPy("negru")

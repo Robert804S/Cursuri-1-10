@@ -1,8 +1,8 @@
 # definirea unei functii simple (fara parametrii si return)
 
-def hello_world ():
+def hello_world():
     print('Hello World!')
-#
+
 # hello_world()  # fara paranteze functia nu va fi executata
 # # daca o functie nu este apelata codul din interiorul ei nu va fi executat
 #
@@ -89,7 +89,8 @@ say_my_age(30)
 
 '''
 def - key word care anunta inceputul unei functii
-say_my_age - numele functiei, dat de catre user, poate sa fie orice nume. In general numele functiei trebuie sa fie sugestiv pentru actiunea pe care o face
+say_my_age - numele functiei, dat de catre user, poate sa fie orice nume. 
+In general numele functiei trebuie sa fie sugestiv pentru actiunea pe care o face
 () - reprezentant al zonei in care putem sa specificam parametrii (parametrii sunt optionali)
 : - reprezinta inceputul corpului functiei
 corpul functiei (asemanator structurilor if, while, for)

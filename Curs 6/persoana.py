@@ -7,7 +7,7 @@ class Persoana():
     def __init__(self,nume,prenume,varsta):
         self.nume = nume  # self.nume este atributul obiectului instantiat,
                           # iar nume este parametrul functiei init,
-                          #prin acest parametru atribuim o valoare atribtului self.nume
+                          # prin acest parametru atribuim o valoare atribtului self.nume
         self.prenume = prenume
         self.varsta = varsta
 
