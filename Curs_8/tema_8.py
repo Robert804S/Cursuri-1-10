@@ -39,6 +39,7 @@ class Selectors():
 
     def address_field(self):
         self.chrome.get("https://formy-project.herokuapp.com/autocomplete")
+        sleep(3)
         address_text_field = self.chrome.find_element(*self.INPUT_ADDRESS).send_keys('Jud. Sibiu')
         # adress_text_field.send_keys('Jud. Sibiu')
 
@@ -103,26 +104,26 @@ class Selectors():
 
 
 activitate_1 = Selectors()
-activitate_1.address_field()
-sleep(3)
+# activitate_1.address_field()
+# sleep(3)
 
-activitate_1.click_autocomplete()
-sleep(3)
+# activitate_1.click_autocomplete()
+# sleep(3)
 
-activitate_1.click_drag_and_drop()
-sleep(3)
+# activitate_1.click_drag_and_drop()
+# sleep(3)
 
-activitate_1.complete_name()
-sleep(3)
+# activitate_1.complete_name()
+# sleep(3)
 
-activitate_1.input_key()
-sleep(3)
+# activitate_1.input_key()
+# sleep(3)
 
-activitate_1.write_your_country()
-sleep(3)
+# activitate_1.write_your_country()
+# sleep(3)
 
-activitate_1.write_address()
-sleep(3)
+# activitate_1.write_address()
+# sleep(3)
 
 activitate_1.write_your_city()
 sleep(3)

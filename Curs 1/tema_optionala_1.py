@@ -29,7 +29,7 @@ print(y)
 # caracter => alAbAlA portocAla.
 
 string1 = input('string de la tastatura: ')
-metoda_slice = slice(0,1)
+metoda_slice = slice(0, 1)
 string2 = string1[metoda_slice]
 print(string2)
 string_modificat = string1[0]+string1[1:len(string1)-1].replace('a','A'.upper())+string1[len(string1)-1]
